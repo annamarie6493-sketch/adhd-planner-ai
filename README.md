@@ -105,6 +105,20 @@ const analysis = await prompts.analyzeTask("Write thesis");
 // Returns: { needsChunking: true, timeEstimate: "2-4 hours", ... }
 ```
 
+## 🖥️ Web App (Brain Dock)
+
+`web/index.html` is a standalone, visual version of the planner. No install or build step.
+
+- **Brain dump**: capture anything fast (press `n` to jump to the input), tag it with energy and size, send it to Today or Later
+- **Doing now**: one task at a time, with an "I'm overwhelmed" button that hides everything else
+- **Energy check**: pick Low / Okay / Charged and matching tasks float up; "Pick a task for me" chooses one
+- **Break it down**: splits a scary task into 2–10 minute micro-steps (uses Claude when published as a claude.ai artifact, starter steps otherwise)
+- **Visual focus timer**: a shrinking wedge instead of a clock, with a chime and break prompt at the end
+- **Time-blind estimates**: "15 min · feels like a coffee break"
+- **Dopamine loop**: points, levels, random surprise bonuses, streaks, confetti, and a "Wins today" list
+
+Open the file in a browser to use it locally (saves to that browser), or publish it as a claude.ai artifact to sync privately to your account.
+
 ## 🛠️ Tech Stack
 
 | Component | Technology |
